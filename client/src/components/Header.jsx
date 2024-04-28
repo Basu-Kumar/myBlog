@@ -7,6 +7,7 @@ import { useLocation } from "react-router-dom";
 
 export default function Header() {
   const path = useLocation().pathname;
+  console.log(path);
 
   return (
     <Navbar className="border-b-2">
