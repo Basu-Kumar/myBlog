@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import { Button, Navbar, TextInput } from "flowbite-react";
 import { AiOutlineSearch } from "react-icons/ai";
@@ -7,13 +6,12 @@ import { useLocation } from "react-router-dom";
 
 export default function Header() {
   const path = useLocation().pathname;
-  console.log(path);
 
   return (
     <Navbar className="border-b-2">
       <Link
         to="/"
-        className="font-semibold self-center text-sm sm:text-xl whitespace-nowrap dark:text-white "
+        className="font-semibold self-center text-sm sm:text-xl whitespace-nowrap dark:text-white"
       >
         <span className="text-indigo-900 bg-gradient-to-r from-pink-500 via-orange-500 to-yellow-200 p-1.5 rounded sm:p-1.5">
           myBLOG
